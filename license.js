@@ -18,7 +18,7 @@ const questions = ([
         name: "licenseDescription",
         messsage: "What is the license Descritpion?",
         type: "input"
-    }
+    },
     {
         name: "askAgain",
         message: "Do you have another license to add?",
