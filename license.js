@@ -8,7 +8,7 @@ function License(name, descritpion) {
     this.descritpion = "description"
 }
 //Creating questions to loop through and add new licenses
-const questions = ([
+const questions = [
     {
         name: "licenseName",
         message: "What is the name of the License?",
@@ -25,18 +25,18 @@ const questions = ([
         type: "confirm",
         default: true
     }
-])
+]
 //Creating functions to keep asking if there is more licenses to add
 function addLicense() {
-    inquirer.prompt(questions, function(answer) {
-    const license = new License(answer.licenseName, answer.licenseDescription)   
-        licenseList.push()
-    })
+    inquirer.prompt(questions).then(function(answer) {
+    const license = new License(answer.licenseName, answer.licenseDescription); 
+        licenseList.push(license);
+    
     if (answer.askAgain) {
         addLicense();
     }
     else {
-        console.table(licenseList);
+        console.log(licenseList);
     }
-}
+})}
 addLicense();

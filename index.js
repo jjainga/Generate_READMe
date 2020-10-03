@@ -31,7 +31,7 @@ inquirer.prompt ([
     },
     {
         name: "contribution",
-        message: "Whoe else worked on this project with you?",
+        message: "Who else worked on this project with you?",
         type: "input",
     },
     {
@@ -69,6 +69,7 @@ ${answer.usage}
 ${answer.license}
        
 ## Credits
+GitHub usernames
 ${answer.contribution}
          `
 }
