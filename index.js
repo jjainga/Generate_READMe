@@ -69,7 +69,7 @@ ${answer.usage}
 ${answer.license}
        
 ## Credits
-GitHub usernames
+GitHub usernames:
 ${answer.contribution}
          `
 }
